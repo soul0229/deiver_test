@@ -1,0 +1,1 @@
+cmd_/home/orangepi/test/08_udev/udev.ko := ld -r -EL  -maarch64elf --build-id=sha1  -T scripts/module.lds -o /home/orangepi/test/08_udev/udev.ko /home/orangepi/test/08_udev/udev.o /home/orangepi/test/08_udev/udev.mod.o;  true

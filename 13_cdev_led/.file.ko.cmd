@@ -1,0 +1,1 @@
+cmd_/home/orangepi/test/07_dev_ops/file.ko := ld -r -EL  -maarch64elf --build-id=sha1  -T scripts/module.lds -o /home/orangepi/test/07_dev_ops/file.ko /home/orangepi/test/07_dev_ops/file.o /home/orangepi/test/07_dev_ops/file.mod.o;  true
