@@ -1,1 +1,0 @@
-cmd_/home/orangepi/test/12_miscdevice/miscdevice.ko := ld -r -EL  -maarch64elf --build-id=sha1  -T scripts/module.lds -o /home/orangepi/test/12_miscdevice/miscdevice.ko /home/orangepi/test/12_miscdevice/miscdevice.o /home/orangepi/test/12_miscdevice/miscdevice.mod.o;  true

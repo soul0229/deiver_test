@@ -1,1 +1,0 @@
-cmd_/home/orangepi/test/transparam/param.ko := ld -r -EL  -maarch64elf --build-id=sha1  -T scripts/module.lds -o /home/orangepi/test/transparam/param.ko /home/orangepi/test/transparam/param.o /home/orangepi/test/transparam/param.mod.o;  true

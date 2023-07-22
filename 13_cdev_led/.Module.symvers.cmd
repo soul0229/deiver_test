@@ -1,1 +1,0 @@
-cmd_/home/orangepi/test/13_cdev_led/Module.symvers := sed 's/\.ko$$/\.o/' /home/orangepi/test/13_cdev_led/modules.order | scripts/mod/modpost    -o /home/orangepi/test/13_cdev_led/Module.symvers -e -i Module.symvers   -T -
