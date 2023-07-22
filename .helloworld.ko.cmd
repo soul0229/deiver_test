@@ -1,1 +1,0 @@
-cmd_/home/orangepi/test/helloworld.ko := ld -r -EL  -maarch64elf --build-id=sha1  -T scripts/module.lds -o /home/orangepi/test/helloworld.ko /home/orangepi/test/helloworld.o /home/orangepi/test/helloworld.mod.o;  true
