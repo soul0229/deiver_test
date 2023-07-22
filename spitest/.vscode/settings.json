@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "spi.h": "c",
+        "*.tcc": "c",
+        "of.h": "c",
+        "gpio.h": "c",
+        "of_gpio.h": "c",
+        "device.h": "c"
+    }
+}
