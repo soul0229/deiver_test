@@ -3,8 +3,8 @@
 ```
 &spi1  {
     status = "okay";
-        pinctrl-names = "default";
-        pinctrl-0 = <&spi1_pins>, <&spi1_cs0_pin>;
+    pinctrl-names = "default";
+    pinctrl-0 = <&spi1_pins>, <&spi1_cs0_pin>;
     st7789v: st7789v@0{
         compatible = "sitronix,st7789v";
         reg = <0>;
