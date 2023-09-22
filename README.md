@@ -16,7 +16,7 @@
         fps = <60>;
         buswidth = <8>;
         rgb;
-                led-gpios   = <&pio 2 6 GPIO_ACTIVE_HIGH>;   // PC6
+        led-gpios   = <&pio 2 6 GPIO_ACTIVE_HIGH>;   // PC6
         dc-gpios    = <&pio 2 7 GPIO_ACTIVE_HIGH>;  // PC7 
         reset-gpios = <&pio 2 8 GPIO_ACTIVE_LOW>;  // PC8
         width = <240>;
