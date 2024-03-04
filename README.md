@@ -131,12 +131,14 @@ display_loop_cnt:
 ```
 @echo off
 setlocal enabledelayedexpansion
-set /a output=1
 
+set /a output=1
 set "target_folder=%~dp0"
+dir /B /TC /O:D /AD > folders.txt
 
 REM 遍历当前文件夹下的所有一级子文件夹
-for /D %%G in (*) do (
+for /F "delims=" %%G in (folders.txt) do (
+REM for /D %%G in (*) do (
     echo folder1: %%G
 	set /a file_count=1000
 	REM 遍历文件夹中的每个.ts文件
