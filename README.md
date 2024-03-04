@@ -134,10 +134,10 @@ setlocal enabledelayedexpansion
 
 set /a output=1
 set "target_folder=%~dp0"
-dir /B /TC /O:D /AD > folders.txt
+dir /B /TC /O:D /AD > folders_order.txt
 
 REM 遍历当前文件夹下的所有一级子文件夹
-for /F "delims=" %%G in (folders.txt) do (
+for /F "delims=" %%G in (folders_order.txt) do (
 REM for /D %%G in (*) do (
     echo folder1: %%G
 	set /a file_count=1000
@@ -163,17 +163,19 @@ REM for /D %%G in (*) do (
 		set /a count+=1
 		set /a i+=1
 	)
-	copy /b "*.ts" "%target_folder%\output_!output!.ts"
+	copy /b "*.ts" "%target_folder%\!output!.ts"
 	cd ..
 	rd /s /q "%target_folder%\%%G"
 	set /a output+=1
 )
 
-for %%F in ("%folder%\*.*") do (
+for %%F in ("%target_folder%\*.*") do (
     set "extension=%%~xF"
     if /i "!extension!" neq ".ts" (
         if /i "!extension!" neq ".bat" (
-            del "%%F"
+            if /i "!extension!" neq ".txt" (
+				del "%%F"
+			)
         )
     )
 )
